@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		46FC342E1C101E6800CCF72E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC342D1C101E6800CCF72E /* AppDelegate.swift */; };
-		46FC34301C101E6800CCF72E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC342F1C101E6800CCF72E /* ViewController.swift */; };
+		46FC34301C101E6800CCF72E /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC342F1C101E6800CCF72E /* ScanViewController.swift */; };
 		46FC34331C101E6800CCF72E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FC34311C101E6800CCF72E /* Main.storyboard */; };
 		46FC34351C101E6800CCF72E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FC34341C101E6800CCF72E /* Assets.xcassets */; };
 		46FC34381C101E6800CCF72E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FC34361C101E6800CCF72E /* LaunchScreen.storyboard */; };
 		46FC34431C101E6800CCF72E /* JINSMEMESamplerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC34421C101E6800CCF72E /* JINSMEMESamplerTests.swift */; };
 		46FC344E1C101E6800CCF72E /* JINSMEMESamplerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC344D1C101E6800CCF72E /* JINSMEMESamplerUITests.swift */; };
+		46FC345C1C101FDE00CCF72E /* MEMELib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FC345B1C101FDE00CCF72E /* MEMELib.framework */; };
+		46FC34681C10233C00CCF72E /* SampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC34671C10233C00CCF72E /* SampleListViewController.swift */; };
+		46FC346B1C102A6D00CCF72E /* MEMELibAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC346A1C102A6D00CCF72E /* MEMELibAccess.swift */; };
+		46FC346F1C104A9700CCF72E /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FC346C1C104A9700CCF72E /* RxBlocking.framework */; };
+		46FC34701C104A9700CCF72E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FC346D1C104A9700CCF72E /* RxCocoa.framework */; };
+		46FC34711C104A9700CCF72E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FC346E1C104A9700CCF72E /* RxSwift.framework */; };
+		46FC34731C104AB200CCF72E /* RxBlocking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46FC346C1C104A9700CCF72E /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46FC34741C104AB200CCF72E /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46FC346D1C104A9700CCF72E /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46FC34751C104AB200CCF72E /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46FC346E1C104A9700CCF72E /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46FC34761C104AB200CCF72E /* MEMELib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46FC345B1C101FDE00CCF72E /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +43,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		46FC34721C104AA900CCF72E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				46FC34731C104AB200CCF72E /* RxBlocking.framework in CopyFiles */,
+				46FC34741C104AB200CCF72E /* RxCocoa.framework in CopyFiles */,
+				46FC34751C104AB200CCF72E /* RxSwift.framework in CopyFiles */,
+				46FC34761C104AB200CCF72E /* MEMELib.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		46FC342A1C101E6800CCF72E /* JINSMEMESampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JINSMEMESampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FC342D1C101E6800CCF72E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46FC342F1C101E6800CCF72E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46FC342F1C101E6800CCF72E /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		46FC34321C101E6800CCF72E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46FC34341C101E6800CCF72E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46FC34371C101E6800CCF72E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +73,13 @@
 		46FC34491C101E6800CCF72E /* JINSMEMESamplerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JINSMEMESamplerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FC344D1C101E6800CCF72E /* JINSMEMESamplerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JINSMEMESamplerUITests.swift; sourceTree = "<group>"; };
 		46FC344F1C101E6800CCF72E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46FC345B1C101FDE00CCF72E /* MEMELib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MEMELib.framework; path = frameworks/universal/MEMELib.framework; sourceTree = "<group>"; };
+		46FC34611C10206000CCF72E /* JINSMEMESampler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "JINSMEMESampler-Bridging-Header.h"; path = "JINSMEMESampler/JINSMEMESampler-Bridging-Header.h"; sourceTree = "<group>"; };
+		46FC34671C10233C00CCF72E /* SampleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleListViewController.swift; sourceTree = "<group>"; };
+		46FC346A1C102A6D00CCF72E /* MEMELibAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEMELibAccess.swift; sourceTree = "<group>"; };
+		46FC346C1C104A9700CCF72E /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		46FC346D1C104A9700CCF72E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		46FC346E1C104A9700CCF72E /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FC346F1C104A9700CCF72E /* RxBlocking.framework in Frameworks */,
+				46FC34701C104A9700CCF72E /* RxCocoa.framework in Frameworks */,
+				46FC34711C104A9700CCF72E /* RxSwift.framework in Frameworks */,
+				46FC345C1C101FDE00CCF72E /* MEMELib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +114,11 @@
 		46FC34211C101E6800CCF72E = {
 			isa = PBXGroup;
 			children = (
+				46FC346C1C104A9700CCF72E /* RxBlocking.framework */,
+				46FC346D1C104A9700CCF72E /* RxCocoa.framework */,
+				46FC346E1C104A9700CCF72E /* RxSwift.framework */,
+				46FC345B1C101FDE00CCF72E /* MEMELib.framework */,
+				46FC34611C10206000CCF72E /* JINSMEMESampler-Bridging-Header.h */,
 				46FC342C1C101E6800CCF72E /* JINSMEMESampler */,
 				46FC34411C101E6800CCF72E /* JINSMEMESamplerTests */,
 				46FC344C1C101E6800CCF72E /* JINSMEMESamplerUITests */,
@@ -98,7 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				46FC342D1C101E6800CCF72E /* AppDelegate.swift */,
-				46FC342F1C101E6800CCF72E /* ViewController.swift */,
+				46FC346A1C102A6D00CCF72E /* MEMELibAccess.swift */,
+				46FC342F1C101E6800CCF72E /* ScanViewController.swift */,
+				46FC34671C10233C00CCF72E /* SampleListViewController.swift */,
 				46FC34311C101E6800CCF72E /* Main.storyboard */,
 				46FC34341C101E6800CCF72E /* Assets.xcassets */,
 				46FC34361C101E6800CCF72E /* LaunchScreen.storyboard */,
@@ -135,6 +179,7 @@
 				46FC34261C101E6800CCF72E /* Sources */,
 				46FC34271C101E6800CCF72E /* Frameworks */,
 				46FC34281C101E6800CCF72E /* Resources */,
+				46FC34721C104AA900CCF72E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -193,6 +238,11 @@
 				TargetAttributes = {
 					46FC34291C101E6800CCF72E = {
 						CreatedOnToolsVersion = 7.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					46FC343D1C101E6800CCF72E = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -256,8 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46FC34301C101E6800CCF72E /* ViewController.swift in Sources */,
+				46FC34301C101E6800CCF72E /* ScanViewController.swift in Sources */,
+				46FC34681C10233C00CCF72E /* SampleListViewController.swift in Sources */,
 				46FC342E1C101E6800CCF72E /* AppDelegate.swift in Sources */,
+				46FC346B1C102A6D00CCF72E /* MEMELibAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +451,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks/universal",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = JINSMEMESampler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = co.mitolab.JINSMEMESampler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JINSMEMESampler/JINSMEMESampler-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +472,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks/universal",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = JINSMEMESampler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = co.mitolab.JINSMEMESampler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JINSMEMESampler/JINSMEMESampler-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -421,6 +492,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks/universal",
+				);
 				INFOPLIST_FILE = JINSMEMESamplerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.mitolab.JINSMEMESamplerTests;
@@ -433,6 +508,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks/universal",
+				);
 				INFOPLIST_FILE = JINSMEMESamplerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.mitolab.JINSMEMESamplerTests;
@@ -444,6 +523,10 @@
 		46FC34591C101E6800CCF72E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks/universal",
+				);
 				INFOPLIST_FILE = JINSMEMESamplerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.mitolab.JINSMEMESamplerUITests;
@@ -456,6 +539,10 @@
 		46FC345A1C101E6800CCF72E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks/universal",
+				);
 				INFOPLIST_FILE = JINSMEMESamplerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.mitolab.JINSMEMESamplerUITests;

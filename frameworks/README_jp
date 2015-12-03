@@ -1,0 +1,18 @@
+JINS MEME SDK version 1.0.5
+詳細はJINS MEME DEVELOPER サイトご確認下さい。
+https://developers.jins.com/resource/
+
+◆Framework file
+
+framework/universal/MEMELib.framework
+開発用フレームワークファイル
+
+framework/device/MEMELib.framework
+アップル申請用フレームワークファイル
+
+◆仕様
+・一般販売されているJINS MEMEとBluetooth LEで通信
+・リアルタイムモードのデータ取得が可能
+◆推奨環境
+・iOS 8以降で動作を確認
+・XCode 6.2以降を開発環境として推奨
