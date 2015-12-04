@@ -42,6 +42,10 @@ class MEMELibAccess: NSObject, MEMELibDelegate {
         MEMELib.sharedInstance().disconnectPeripheral()
     }
     
+    var isConnected: Bool {
+        return MEMELib.sharedInstance().isConnected
+    }
+    
     // MARK: - Wrapper for MEMELidDelegate
     // Methods below are publishing each event to multiple subscriber
     func memePeripheralFound(peripheral: CBPeripheral!, withDeviceAddress address: String!) {
@@ -49,6 +53,7 @@ class MEMELibAccess: NSObject, MEMELibDelegate {
     }
     
     func memePeripheralConnected(peripheral: CBPeripheral!) {
+        MEMELib.sharedInstance().startDataReport()
         self.rx_memeConnected.on(.Next(peripheral))
     }
     

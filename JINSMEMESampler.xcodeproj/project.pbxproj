@@ -24,6 +24,8 @@
 		46FC34741C104AB200CCF72E /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46FC346D1C104A9700CCF72E /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		46FC34751C104AB200CCF72E /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46FC346E1C104A9700CCF72E /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		46FC34761C104AB200CCF72E /* MEMELib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46FC345B1C101FDE00CCF72E /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46FC347A1C11A06A00CCF72E /* DataView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FC34791C11A06A00CCF72E /* DataView.storyboard */; };
+		46FC347C1C11A0D100CCF72E /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC347B1C11A0D100CCF72E /* DataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		46FC346C1C104A9700CCF72E /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		46FC346D1C104A9700CCF72E /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		46FC346E1C104A9700CCF72E /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		46FC34791C11A06A00CCF72E /* DataView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DataView.storyboard; sourceTree = "<group>"; };
+		46FC347B1C11A0D100CCF72E /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +147,9 @@
 				46FC346A1C102A6D00CCF72E /* MEMELibAccess.swift */,
 				46FC342F1C101E6800CCF72E /* ScanViewController.swift */,
 				46FC34671C10233C00CCF72E /* SampleListViewController.swift */,
+				46FC347B1C11A0D100CCF72E /* DataViewController.swift */,
 				46FC34311C101E6800CCF72E /* Main.storyboard */,
+				46FC34791C11A06A00CCF72E /* DataView.storyboard */,
 				46FC34341C101E6800CCF72E /* Assets.xcassets */,
 				46FC34361C101E6800CCF72E /* LaunchScreen.storyboard */,
 				46FC34391C101E6800CCF72E /* Info.plist */,
@@ -282,6 +288,7 @@
 				46FC34381C101E6800CCF72E /* LaunchScreen.storyboard in Resources */,
 				46FC34351C101E6800CCF72E /* Assets.xcassets in Resources */,
 				46FC34331C101E6800CCF72E /* Main.storyboard in Resources */,
+				46FC347A1C11A06A00CCF72E /* DataView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +315,7 @@
 			files = (
 				46FC34301C101E6800CCF72E /* ScanViewController.swift in Sources */,
 				46FC34681C10233C00CCF72E /* SampleListViewController.swift in Sources */,
+				46FC347C1C11A0D100CCF72E /* DataViewController.swift in Sources */,
 				46FC342E1C101E6800CCF72E /* AppDelegate.swift in Sources */,
 				46FC346B1C102A6D00CCF72E /* MEMELibAccess.swift in Sources */,
 			);

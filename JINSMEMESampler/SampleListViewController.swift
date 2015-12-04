@@ -6,44 +6,44 @@
 //  Copyright © 2015 mitolab. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
+
+class SampleListViewModel {
+    var samples = Variable<[String]>([])
+    
+    init() {
+        self.samples.value.append("DataView")
+        // self.samples.value.append("EyeBlink")
+    }
+}
 
 class SampleViewController: UITableViewController {
     
-    var samples = [String]()
+    let viewModel = SampleListViewModel()
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.samples = ["EyeBlink"]
+        self.title = "Sample List"
+        
+        // cellForRow~
+        viewModel.samples.bindTo(self.tableView.rx_itemsWithCellIdentifier("SampleNameCell")) { _, sampleName, cell -> Void in
+            cell.textLabel?.text = sampleName
+        }.addDisposableTo(self.disposeBag)
+        
+        // tableview did selected
+        self.tableView.rx_itemSelected.subscribeNext { [unowned self] indexPath in
+            let sbName = self.viewModel.samples.value[indexPath.row]
+            let vc = UIStoryboard(name: sbName, bundle: nil).instantiateInitialViewController()
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }.addDisposableTo(self.disposeBag)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("SampleNameCell")
-        cell!.textLabel!.text = self.samples[indexPath.row]
-        
-        return cell!
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.samples.count
-    }
-    
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let sb = UIStoryboard(name: samples[indexPath.row], bundle: nil)
-        let vc = sb.instantiateInitialViewController()
-        
-        self.navigationController?.pushViewController(vc!, animated: true)
     }
 }

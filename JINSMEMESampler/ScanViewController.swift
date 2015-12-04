@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ViewModel {
+class ScanViewModel {
     var peripherals = Variable<[CBPeripheral]>([])
 }
 
@@ -19,7 +19,7 @@ class ScanViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var scanBtn: UIButton!
     let disposeBag = DisposeBag()
-    let viewModel = ViewModel()
+    let viewModel = ScanViewModel()
     
     func bindViewAndModel() {
 
@@ -70,13 +70,28 @@ class ScanViewController: UIViewController {
             print("meme disconnected")
             self.scanBtn.enabled = true
             self.tableView.userInteractionEnabled = true
+            
+            let alert:UIAlertController = UIAlertController(title: "Meme has disconnected", message: "for peripheral: \(peripheral.identifier.UUIDString)", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+
         }.addDisposableTo(self.disposeBag)
-        
+
         /***** Other UI Components *****/
 
         self.scanBtn.rx_tap.subscribeNext({
             MEMELibAccess.scan()
         }).addDisposableTo(self.disposeBag)
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if MEMELibAccess.sharedInstance.isConnected {
+            // Disconnect JINS MEME everytime this view appears
+            MEMELibAccess.disconnect()
+        }
     }
     
     override func viewDidLoad() {
