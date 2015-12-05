@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		467EFFCD1C12BC4300937FE8 /* SpreadsheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467EFFCC1C12BC4300937FE8 /* SpreadsheetViewController.swift */; };
+		467EFFCF1C12BD1900937FE8 /* Spreadsheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467EFFCE1C12BD1900937FE8 /* Spreadsheet.storyboard */; };
 		46FC342E1C101E6800CCF72E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC342D1C101E6800CCF72E /* AppDelegate.swift */; };
 		46FC34301C101E6800CCF72E /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC342F1C101E6800CCF72E /* ScanViewController.swift */; };
 		46FC34331C101E6800CCF72E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FC34311C101E6800CCF72E /* Main.storyboard */; };
@@ -62,6 +64,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		467EFFCC1C12BC4300937FE8 /* SpreadsheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpreadsheetViewController.swift; sourceTree = "<group>"; };
+		467EFFCE1C12BD1900937FE8 /* Spreadsheet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Spreadsheet.storyboard; sourceTree = "<group>"; };
 		46FC342A1C101E6800CCF72E /* JINSMEMESampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JINSMEMESampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FC342D1C101E6800CCF72E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46FC342F1C101E6800CCF72E /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
@@ -148,8 +152,10 @@
 				46FC342F1C101E6800CCF72E /* ScanViewController.swift */,
 				46FC34671C10233C00CCF72E /* SampleListViewController.swift */,
 				46FC347B1C11A0D100CCF72E /* DataViewController.swift */,
+				467EFFCC1C12BC4300937FE8 /* SpreadsheetViewController.swift */,
 				46FC34311C101E6800CCF72E /* Main.storyboard */,
 				46FC34791C11A06A00CCF72E /* DataView.storyboard */,
+				467EFFCE1C12BD1900937FE8 /* Spreadsheet.storyboard */,
 				46FC34341C101E6800CCF72E /* Assets.xcassets */,
 				46FC34361C101E6800CCF72E /* LaunchScreen.storyboard */,
 				46FC34391C101E6800CCF72E /* Info.plist */,
@@ -285,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467EFFCF1C12BD1900937FE8 /* Spreadsheet.storyboard in Resources */,
 				46FC34381C101E6800CCF72E /* LaunchScreen.storyboard in Resources */,
 				46FC34351C101E6800CCF72E /* Assets.xcassets in Resources */,
 				46FC34331C101E6800CCF72E /* Main.storyboard in Resources */,
@@ -315,6 +322,7 @@
 			files = (
 				46FC34301C101E6800CCF72E /* ScanViewController.swift in Sources */,
 				46FC34681C10233C00CCF72E /* SampleListViewController.swift in Sources */,
+				467EFFCD1C12BC4300937FE8 /* SpreadsheetViewController.swift in Sources */,
 				46FC347C1C11A0D100CCF72E /* DataViewController.swift in Sources */,
 				46FC342E1C101E6800CCF72E /* AppDelegate.swift in Sources */,
 				46FC346B1C102A6D00CCF72E /* MEMELibAccess.swift in Sources */,
@@ -579,6 +587,7 @@
 				46FC34541C101E6800CCF72E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46FC34551C101E6800CCF72E /* Build configuration list for PBXNativeTarget "JINSMEMESamplerTests" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +596,7 @@
 				46FC34571C101E6800CCF72E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46FC34581C101E6800CCF72E /* Build configuration list for PBXNativeTarget "JINSMEMESamplerUITests" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +605,7 @@
 				46FC345A1C101E6800CCF72E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

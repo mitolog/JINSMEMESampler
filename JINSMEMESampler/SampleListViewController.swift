@@ -15,7 +15,7 @@ class SampleListViewModel {
     
     init() {
         self.samples.value.append("DataView")
-        // self.samples.value.append("EyeBlink")
+        self.samples.value.append("Spreadsheet")
     }
 }
 

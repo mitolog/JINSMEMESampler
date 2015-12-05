@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tHK-Jg-KcL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Spreadsheet View Controller-->
+        <scene sceneID="mGh-zX-qAr">
+            <objects>
+                <viewController id="tHK-Jg-KcL" customClass="SpreadsheetViewController" customModule="JINSMEMESampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hsk-mg-guO"/>
+                        <viewControllerLayoutGuide type="bottom" id="z4C-EQ-gdm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Yb-Pj-DWl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="in sec" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LyI-hv-qxh">
+                                <rect key="frame" x="180" y="85" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0tF-mm-37R"/>
+                                    <constraint firstAttribute="width" constant="240" id="SSV-V1-U17"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interval" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-vn-pA2">
+                                <rect key="frame" x="180" y="56" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="aHR-cA-nP5"/>
+                                    <constraint firstAttribute="height" constant="21" id="cfb-tH-lcI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEj-F4-7dr">
+                                <rect key="frame" x="180" y="209" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="bIU-7W-vgk"/>
+                                    <constraint firstAttribute="height" constant="21" id="gb3-Nq-djh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vD-gb-kCT">
+                                <rect key="frame" x="180" y="138" width="240" height="48"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="O1X-Bn-V9Q"/>
+                                    <constraint firstAttribute="height" constant="48" id="qzF-Hx-L4t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="Start"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4ls-oS-mAp">
+                                <rect key="frame" x="0.0" y="238" width="600" height="362"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JPe-vn-pA2" firstAttribute="top" secondItem="Hsk-mg-guO" secondAttribute="bottom" constant="36" id="256-CC-4Y6"/>
+                            <constraint firstItem="LyI-hv-qxh" firstAttribute="top" secondItem="JPe-vn-pA2" secondAttribute="bottom" constant="8" id="3En-6E-1pl"/>
+                            <constraint firstItem="5vD-gb-kCT" firstAttribute="centerX" secondItem="JPe-vn-pA2" secondAttribute="centerX" id="3PS-OH-wra"/>
+                            <constraint firstItem="rEj-F4-7dr" firstAttribute="centerX" secondItem="JPe-vn-pA2" secondAttribute="centerX" id="4Q3-RZ-mrC"/>
+                            <constraint firstItem="JPe-vn-pA2" firstAttribute="centerX" secondItem="4Yb-Pj-DWl" secondAttribute="centerX" id="FIp-Cj-p3N"/>
+                            <constraint firstAttribute="trailing" secondItem="4ls-oS-mAp" secondAttribute="trailing" id="KdX-Rz-EYp"/>
+                            <constraint firstItem="z4C-EQ-gdm" firstAttribute="top" secondItem="4ls-oS-mAp" secondAttribute="bottom" id="Xfj-zb-CCw"/>
+                            <constraint firstItem="5vD-gb-kCT" firstAttribute="top" secondItem="LyI-hv-qxh" secondAttribute="bottom" constant="23" id="aOq-a4-wsh"/>
+                            <constraint firstItem="rEj-F4-7dr" firstAttribute="centerX" secondItem="4Yb-Pj-DWl" secondAttribute="centerX" id="cMw-83-UyM"/>
+                            <constraint firstItem="4ls-oS-mAp" firstAttribute="leading" secondItem="4Yb-Pj-DWl" secondAttribute="leading" id="fwy-ax-2XQ"/>
+                            <constraint firstItem="LyI-hv-qxh" firstAttribute="centerX" secondItem="JPe-vn-pA2" secondAttribute="centerX" id="hpm-rE-kWU"/>
+                            <constraint firstItem="rEj-F4-7dr" firstAttribute="top" secondItem="5vD-gb-kCT" secondAttribute="bottom" constant="23" id="nwZ-43-JTh"/>
+                            <constraint firstItem="4ls-oS-mAp" firstAttribute="top" secondItem="rEj-F4-7dr" secondAttribute="bottom" constant="8" id="pgG-Vz-qp9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cMw-83-UyM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="intervalTextField" destination="LyI-hv-qxh" id="Iy8-Jp-dUg"/>
+                        <outlet property="responseTextView" destination="4ls-oS-mAp" id="r0f-H9-G5t"/>
+                        <outlet property="startStopBtn" destination="5vD-gb-kCT" id="Rcr-L7-FAz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKv-EB-xCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="219"/>
+        </scene>
+    </scenes>
+</document>
