@@ -16,6 +16,7 @@ class SampleListViewModel {
     init() {
         self.samples.value.append("DataView")
         self.samples.value.append("Spreadsheet")
+        self.samples.value.append("Processing")
     }
 }
 

@@ -11,6 +11,10 @@
 		467EFFD81C137F4900937FE8 /* SpreadsheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467EFFD51C137F4900937FE8 /* SpreadsheetViewController.swift */; };
 		467EFFDC1C137FA500937FE8 /* DataView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467EFFDA1C137FA500937FE8 /* DataView.storyboard */; };
 		467EFFDD1C137FA500937FE8 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467EFFDB1C137FA500937FE8 /* DataViewController.swift */; };
+		467EFFE01C14766700937FE8 /* ProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467EFFDF1C14766700937FE8 /* ProcessingViewController.swift */; };
+		467EFFE21C147B4D00937FE8 /* TcpSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467EFFE11C147B4D00937FE8 /* TcpSocketManager.swift */; };
+		467EFFE41C147BDA00937FE8 /* Processing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467EFFE31C147BDA00937FE8 /* Processing.storyboard */; };
+		469A94131C148841003FB39A /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A94121C148841003FB39A /* Consts.swift */; };
 		46FC342E1C101E6800CCF72E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC342D1C101E6800CCF72E /* AppDelegate.swift */; };
 		46FC34301C101E6800CCF72E /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC342F1C101E6800CCF72E /* ScanViewController.swift */; };
 		46FC34331C101E6800CCF72E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FC34311C101E6800CCF72E /* Main.storyboard */; };
@@ -69,6 +73,10 @@
 		467EFFD51C137F4900937FE8 /* SpreadsheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpreadsheetViewController.swift; sourceTree = "<group>"; };
 		467EFFDA1C137FA500937FE8 /* DataView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DataView.storyboard; sourceTree = "<group>"; };
 		467EFFDB1C137FA500937FE8 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		467EFFDF1C14766700937FE8 /* ProcessingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessingViewController.swift; sourceTree = "<group>"; };
+		467EFFE11C147B4D00937FE8 /* TcpSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TcpSocketManager.swift; sourceTree = "<group>"; };
+		467EFFE31C147BDA00937FE8 /* Processing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Processing.storyboard; sourceTree = "<group>"; };
+		469A94121C148841003FB39A /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		46FC342A1C101E6800CCF72E /* JINSMEMESampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JINSMEMESampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FC342D1C101E6800CCF72E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46FC342F1C101E6800CCF72E /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +147,16 @@
 			path = DataView;
 			sourceTree = "<group>";
 		};
+		467EFFDE1C14765A00937FE8 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				467EFFDF1C14766700937FE8 /* ProcessingViewController.swift */,
+				467EFFE11C147B4D00937FE8 /* TcpSocketManager.swift */,
+				467EFFE31C147BDA00937FE8 /* Processing.storyboard */,
+			);
+			path = Processing;
+			sourceTree = "<group>";
+		};
 		46FC34211C101E6800CCF72E = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +185,7 @@
 		46FC342C1C101E6800CCF72E /* JINSMEMESampler */ = {
 			isa = PBXGroup;
 			children = (
+				469A94121C148841003FB39A /* Consts.swift */,
 				46FC342D1C101E6800CCF72E /* AppDelegate.swift */,
 				46FC346A1C102A6D00CCF72E /* MEMELibAccess.swift */,
 				46FC342F1C101E6800CCF72E /* ScanViewController.swift */,
@@ -174,6 +193,7 @@
 				46FC34311C101E6800CCF72E /* Main.storyboard */,
 				467EFFD91C137FA500937FE8 /* DataView */,
 				467EFFD21C137F4900937FE8 /* Spreadsheet */,
+				467EFFDE1C14765A00937FE8 /* Processing */,
 				46FC34341C101E6800CCF72E /* Assets.xcassets */,
 				46FC34361C101E6800CCF72E /* LaunchScreen.storyboard */,
 				46FC34391C101E6800CCF72E /* Info.plist */,
@@ -312,6 +332,7 @@
 				46FC34381C101E6800CCF72E /* LaunchScreen.storyboard in Resources */,
 				467EFFDC1C137FA500937FE8 /* DataView.storyboard in Resources */,
 				467EFFD71C137F4900937FE8 /* Spreadsheet.storyboard in Resources */,
+				467EFFE41C147BDA00937FE8 /* Processing.storyboard in Resources */,
 				46FC34351C101E6800CCF72E /* Assets.xcassets in Resources */,
 				46FC34331C101E6800CCF72E /* Main.storyboard in Resources */,
 			);
@@ -342,8 +363,11 @@
 				46FC34681C10233C00CCF72E /* SampleListViewController.swift in Sources */,
 				46FC342E1C101E6800CCF72E /* AppDelegate.swift in Sources */,
 				46FC346B1C102A6D00CCF72E /* MEMELibAccess.swift in Sources */,
+				467EFFE21C147B4D00937FE8 /* TcpSocketManager.swift in Sources */,
 				467EFFDD1C137FA500937FE8 /* DataViewController.swift in Sources */,
 				467EFFD81C137F4900937FE8 /* SpreadsheetViewController.swift in Sources */,
+				469A94131C148841003FB39A /* Consts.swift in Sources */,
+				467EFFE01C14766700937FE8 /* ProcessingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

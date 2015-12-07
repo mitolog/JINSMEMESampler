@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RUU-g8-6JJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Processing View Controller-->
+        <scene sceneID="hcs-Hh-qa2">
+            <objects>
+                <viewController id="RUU-g8-6JJ" customClass="ProcessingViewController" customModule="JINSMEMESampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hzt-D4-LjM"/>
+                        <viewControllerLayoutGuide type="bottom" id="GEP-3T-Bjv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nBE-xO-AZD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Host IP: 0.0.0.0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gij-CG-WJN">
+                                <rect key="frame" x="180" y="73" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="e1K-hx-qJs"/>
+                                    <constraint firstAttribute="width" constant="240" id="yj0-5Q-hQZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Port: 49152 - 65535" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJW-rw-lGS">
+                                <rect key="frame" x="180" y="111" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0hi-w6-Zft"/>
+                                    <constraint firstAttribute="height" constant="30" id="fDC-P7-EbJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TCP Host IP / Port" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMg-rY-rpA">
+                                <rect key="frame" x="180" y="44" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="AEP-8F-7Jf"/>
+                                    <constraint firstAttribute="width" constant="240" id="SvU-zd-XOY"/>
+                                    <constraint firstAttribute="height" constant="21" id="Xl3-0m-es2"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="uNS-ZB-dwL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AEP-8F-7Jf"/>
+                                        <exclude reference="uNS-ZB-dwL"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bip-JL-ESf">
+                                <rect key="frame" x="0.0" y="229" width="600" height="371"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProcessingDataViewCell" textLabel="Lno-La-q2B" detailTextLabel="TFL-aH-ti6" style="IBUITableViewCellStyleValue1" id="I8D-Xs-3Iw">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I8D-Xs-3Iw" id="q16-cB-Di0">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lno-La-q2B">
+                                                    <rect key="frame" x="15" y="14" width="34" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TFL-aH-ti6">
+                                                    <rect key="frame" x="540" y="14" width="45" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocL-d8-9fT">
+                                <rect key="frame" x="180" y="161" width="240" height="48"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3ap-Jq-eKU"/>
+                                    <constraint firstAttribute="height" constant="48" id="Ue0-KQ-gPl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="Start"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZMg-rY-rpA" firstAttribute="top" secondItem="hzt-D4-LjM" secondAttribute="bottom" constant="24" id="47c-Ei-FoS"/>
+                            <constraint firstItem="RJW-rw-lGS" firstAttribute="top" secondItem="gij-CG-WJN" secondAttribute="bottom" constant="8" id="6QS-5k-MaY"/>
+                            <constraint firstItem="ZMg-rY-rpA" firstAttribute="centerX" secondItem="nBE-xO-AZD" secondAttribute="centerX" id="B2I-vQ-eus"/>
+                            <constraint firstItem="RJW-rw-lGS" firstAttribute="centerX" secondItem="ZMg-rY-rpA" secondAttribute="centerX" id="DHm-cK-JR8"/>
+                            <constraint firstItem="Bip-JL-ESf" firstAttribute="top" secondItem="ocL-d8-9fT" secondAttribute="bottom" constant="20" id="Dej-kV-uAv"/>
+                            <constraint firstItem="ZMg-rY-rpA" firstAttribute="centerX" secondItem="nBE-xO-AZD" secondAttribute="centerX" id="Esa-z6-Ypv"/>
+                            <constraint firstItem="ZMg-rY-rpA" firstAttribute="centerX" secondItem="nBE-xO-AZD" secondAttribute="centerX" id="HsW-bK-TBi"/>
+                            <constraint firstItem="RJW-rw-lGS" firstAttribute="centerX" secondItem="nBE-xO-AZD" secondAttribute="centerX" id="T6D-FL-HNQ"/>
+                            <constraint firstItem="ocL-d8-9fT" firstAttribute="top" secondItem="gij-CG-WJN" secondAttribute="bottom" constant="20" id="iR1-2f-g9t"/>
+                            <constraint firstItem="Bip-JL-ESf" firstAttribute="leading" secondItem="nBE-xO-AZD" secondAttribute="leading" id="nq8-QU-WMJ"/>
+                            <constraint firstItem="ocL-d8-9fT" firstAttribute="centerX" secondItem="nBE-xO-AZD" secondAttribute="centerX" id="piY-AS-uXJ"/>
+                            <constraint firstItem="GEP-3T-Bjv" firstAttribute="top" secondItem="Bip-JL-ESf" secondAttribute="bottom" id="qg9-Yd-wiT"/>
+                            <constraint firstItem="gij-CG-WJN" firstAttribute="top" secondItem="ZMg-rY-rpA" secondAttribute="bottom" constant="8" id="rwy-8l-wx3"/>
+                            <constraint firstAttribute="trailing" secondItem="Bip-JL-ESf" secondAttribute="trailing" id="vfu-yt-bnj"/>
+                            <constraint firstItem="gij-CG-WJN" firstAttribute="centerX" secondItem="ZMg-rY-rpA" secondAttribute="centerX" id="xEp-BA-xOm"/>
+                            <constraint firstItem="ocL-d8-9fT" firstAttribute="top" secondItem="RJW-rw-lGS" secondAttribute="bottom" constant="20" id="yPF-HN-T9k"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="T6D-FL-HNQ"/>
+                                <exclude reference="iR1-2f-g9t"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="hostIpTextField" destination="gij-CG-WJN" id="dC4-b3-bSI"/>
+                        <outlet property="hostPortTextField" destination="RJW-rw-lGS" id="ZAU-mw-cke"/>
+                        <outlet property="startStopBtn" destination="ocL-d8-9fT" id="PMd-Xp-QUw"/>
+                        <outlet property="tableView" destination="Bip-JL-ESf" id="m1U-Zb-39L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzD-Hf-Qh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="523"/>
+        </scene>
+    </scenes>
+</document>
