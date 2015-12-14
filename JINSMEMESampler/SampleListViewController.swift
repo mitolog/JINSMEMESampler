@@ -17,6 +17,7 @@ class SampleListViewModel {
         self.samples.value.append("DataView")
         self.samples.value.append("Spreadsheet")
         self.samples.value.append("Processing")
+        self.samples.value.append("AutoLockScreen")
     }
 }
 

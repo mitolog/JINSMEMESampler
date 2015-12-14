@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		467EFFD71C137F4900937FE8 /* Spreadsheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467EFFD41C137F4900937FE8 /* Spreadsheet.storyboard */; };
-		467EFFD81C137F4900937FE8 /* SpreadsheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467EFFD51C137F4900937FE8 /* SpreadsheetViewController.swift */; };
 		467EFFDC1C137FA500937FE8 /* DataView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467EFFDA1C137FA500937FE8 /* DataView.storyboard */; };
 		467EFFDD1C137FA500937FE8 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467EFFDB1C137FA500937FE8 /* DataViewController.swift */; };
-		467EFFE01C14766700937FE8 /* ProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467EFFDF1C14766700937FE8 /* ProcessingViewController.swift */; };
-		467EFFE21C147B4D00937FE8 /* TcpSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467EFFE11C147B4D00937FE8 /* TcpSocketManager.swift */; };
-		467EFFE41C147BDA00937FE8 /* Processing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467EFFE31C147BDA00937FE8 /* Processing.storyboard */; };
 		469A94131C148841003FB39A /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469A94121C148841003FB39A /* Consts.swift */; };
+		46E677F31C1E8F78007A2C85 /* Spreadsheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E677F01C1E8F78007A2C85 /* Spreadsheet.storyboard */; };
+		46E677F41C1E8F78007A2C85 /* SpreadsheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E677F11C1E8F78007A2C85 /* SpreadsheetViewController.swift */; };
+		46E677F91C1E8FDB007A2C85 /* Processing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E677F61C1E8FDB007A2C85 /* Processing.storyboard */; };
+		46E677FA1C1E8FDB007A2C85 /* ProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E677F71C1E8FDB007A2C85 /* ProcessingViewController.swift */; };
+		46E677FB1C1E8FDB007A2C85 /* TcpSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E677F81C1E8FDB007A2C85 /* TcpSocketManager.swift */; };
+		46E678001C1E91AB007A2C85 /* AutoLockScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E677FF1C1E91AB007A2C85 /* AutoLockScreenViewController.swift */; };
+		46E678021C1E91EE007A2C85 /* AutoLockScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E678011C1E91EE007A2C85 /* AutoLockScreen.storyboard */; };
 		46FC342E1C101E6800CCF72E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC342D1C101E6800CCF72E /* AppDelegate.swift */; };
 		46FC34301C101E6800CCF72E /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC342F1C101E6800CCF72E /* ScanViewController.swift */; };
 		46FC34331C101E6800CCF72E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FC34311C101E6800CCF72E /* Main.storyboard */; };
@@ -28,10 +30,10 @@
 		46FC346F1C104A9700CCF72E /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FC346C1C104A9700CCF72E /* RxBlocking.framework */; };
 		46FC34701C104A9700CCF72E /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FC346D1C104A9700CCF72E /* RxCocoa.framework */; };
 		46FC34711C104A9700CCF72E /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FC346E1C104A9700CCF72E /* RxSwift.framework */; };
-		46FC34731C104AB200CCF72E /* RxBlocking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46FC346C1C104A9700CCF72E /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		46FC34741C104AB200CCF72E /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46FC346D1C104A9700CCF72E /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		46FC34751C104AB200CCF72E /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46FC346E1C104A9700CCF72E /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		46FC34761C104AB200CCF72E /* MEMELib.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 46FC345B1C101FDE00CCF72E /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46FC34731C104AB200CCF72E /* RxBlocking.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 46FC346C1C104A9700CCF72E /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46FC34741C104AB200CCF72E /* RxCocoa.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 46FC346D1C104A9700CCF72E /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46FC34751C104AB200CCF72E /* RxSwift.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 46FC346E1C104A9700CCF72E /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46FC34761C104AB200CCF72E /* MEMELib.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 46FC345B1C101FDE00CCF72E /* MEMELib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,31 +54,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		46FC34721C104AA900CCF72E /* CopyFiles */ = {
+		46FC34721C104AA900CCF72E /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				46FC34731C104AB200CCF72E /* RxBlocking.framework in CopyFiles */,
-				46FC34741C104AB200CCF72E /* RxCocoa.framework in CopyFiles */,
-				46FC34751C104AB200CCF72E /* RxSwift.framework in CopyFiles */,
-				46FC34761C104AB200CCF72E /* MEMELib.framework in CopyFiles */,
+				46FC34731C104AB200CCF72E /* RxBlocking.framework in Copy Files */,
+				46FC34741C104AB200CCF72E /* RxCocoa.framework in Copy Files */,
+				46FC34751C104AB200CCF72E /* RxSwift.framework in Copy Files */,
+				46FC34761C104AB200CCF72E /* MEMELib.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		467EFFD31C137F4900937FE8 /* code.gs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = code.gs; sourceTree = "<group>"; };
-		467EFFD41C137F4900937FE8 /* Spreadsheet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Spreadsheet.storyboard; sourceTree = "<group>"; };
-		467EFFD51C137F4900937FE8 /* SpreadsheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpreadsheetViewController.swift; sourceTree = "<group>"; };
 		467EFFDA1C137FA500937FE8 /* DataView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DataView.storyboard; sourceTree = "<group>"; };
 		467EFFDB1C137FA500937FE8 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		467EFFDF1C14766700937FE8 /* ProcessingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessingViewController.swift; sourceTree = "<group>"; };
-		467EFFE11C147B4D00937FE8 /* TcpSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TcpSocketManager.swift; sourceTree = "<group>"; };
-		467EFFE31C147BDA00937FE8 /* Processing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Processing.storyboard; sourceTree = "<group>"; };
 		469A94121C148841003FB39A /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		469A94151C16EEC7003FB39A /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		46E677EE1C1E8B0C007A2C85 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46E677F01C1E8F78007A2C85 /* Spreadsheet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Spreadsheet.storyboard; path = "JINSMEMESampler/Spreadsheet(POST)/Spreadsheet.storyboard"; sourceTree = SOURCE_ROOT; };
+		46E677F11C1E8F78007A2C85 /* SpreadsheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpreadsheetViewController.swift; path = "JINSMEMESampler/Spreadsheet(POST)/SpreadsheetViewController.swift"; sourceTree = SOURCE_ROOT; };
+		46E677F61C1E8FDB007A2C85 /* Processing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Processing.storyboard; path = "Processing(TcpSocket)/Processing.storyboard"; sourceTree = "<group>"; };
+		46E677F71C1E8FDB007A2C85 /* ProcessingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProcessingViewController.swift; path = "Processing(TcpSocket)/ProcessingViewController.swift"; sourceTree = "<group>"; };
+		46E677F81C1E8FDB007A2C85 /* TcpSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TcpSocketManager.swift; path = "Processing(TcpSocket)/TcpSocketManager.swift"; sourceTree = "<group>"; };
+		46E677FF1C1E91AB007A2C85 /* AutoLockScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLockScreenViewController.swift; path = "JINSMEMESampler/AutoLockScreen(socketio)/AutoLockScreenViewController.swift"; sourceTree = SOURCE_ROOT; };
+		46E678011C1E91EE007A2C85 /* AutoLockScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AutoLockScreen.storyboard; path = "JINSMEMESampler/AutoLockScreen(socketio)/AutoLockScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		46FC342A1C101E6800CCF72E /* JINSMEMESampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JINSMEMESampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FC342D1C101E6800CCF72E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46FC342F1C101E6800CCF72E /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
@@ -128,13 +134,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		467EFFD21C137F4900937FE8 /* Spreadsheet */ = {
+		467EFFD21C137F4900937FE8 /* Spreadsheet(POST) */ = {
 			isa = PBXGroup;
 			children = (
-				467EFFD31C137F4900937FE8 /* code.gs */,
-				467EFFD41C137F4900937FE8 /* Spreadsheet.storyboard */,
-				467EFFD51C137F4900937FE8 /* SpreadsheetViewController.swift */,
+				46E677F01C1E8F78007A2C85 /* Spreadsheet.storyboard */,
+				46E677F11C1E8F78007A2C85 /* SpreadsheetViewController.swift */,
 			);
+			name = "Spreadsheet(POST)";
 			path = Spreadsheet;
 			sourceTree = "<group>";
 		};
@@ -147,19 +153,31 @@
 			path = DataView;
 			sourceTree = "<group>";
 		};
-		467EFFDE1C14765A00937FE8 /* Processing */ = {
+		46E677F51C1E8FC7007A2C85 /* Processing(TcpSocket) */ = {
 			isa = PBXGroup;
 			children = (
-				467EFFDF1C14766700937FE8 /* ProcessingViewController.swift */,
-				467EFFE11C147B4D00937FE8 /* TcpSocketManager.swift */,
-				467EFFE31C147BDA00937FE8 /* Processing.storyboard */,
+				46E677F61C1E8FDB007A2C85 /* Processing.storyboard */,
+				46E677F71C1E8FDB007A2C85 /* ProcessingViewController.swift */,
+				46E677F81C1E8FDB007A2C85 /* TcpSocketManager.swift */,
 			);
-			path = Processing;
+			name = "Processing(TcpSocket)";
+			sourceTree = "<group>";
+		};
+		46E677FC1C1E9084007A2C85 /* AutoLockScreen(socketio) */ = {
+			isa = PBXGroup;
+			children = (
+				46E677FF1C1E91AB007A2C85 /* AutoLockScreenViewController.swift */,
+				46E678011C1E91EE007A2C85 /* AutoLockScreen.storyboard */,
+			);
+			name = "AutoLockScreen(socketio)";
+			path = "Autolockscreen(socketio)";
 			sourceTree = "<group>";
 		};
 		46FC34211C101E6800CCF72E = {
 			isa = PBXGroup;
 			children = (
+				469A94151C16EEC7003FB39A /* Cartfile */,
+				46E677EE1C1E8B0C007A2C85 /* README.md */,
 				46FC346C1C104A9700CCF72E /* RxBlocking.framework */,
 				46FC346D1C104A9700CCF72E /* RxCocoa.framework */,
 				46FC346E1C104A9700CCF72E /* RxSwift.framework */,
@@ -192,8 +210,9 @@
 				46FC34671C10233C00CCF72E /* SampleListViewController.swift */,
 				46FC34311C101E6800CCF72E /* Main.storyboard */,
 				467EFFD91C137FA500937FE8 /* DataView */,
-				467EFFD21C137F4900937FE8 /* Spreadsheet */,
-				467EFFDE1C14765A00937FE8 /* Processing */,
+				467EFFD21C137F4900937FE8 /* Spreadsheet(POST) */,
+				46E677F51C1E8FC7007A2C85 /* Processing(TcpSocket) */,
+				46E677FC1C1E9084007A2C85 /* AutoLockScreen(socketio) */,
 				46FC34341C101E6800CCF72E /* Assets.xcassets */,
 				46FC34361C101E6800CCF72E /* LaunchScreen.storyboard */,
 				46FC34391C101E6800CCF72E /* Info.plist */,
@@ -229,7 +248,7 @@
 				46FC34261C101E6800CCF72E /* Sources */,
 				46FC34271C101E6800CCF72E /* Frameworks */,
 				46FC34281C101E6800CCF72E /* Resources */,
-				46FC34721C104AA900CCF72E /* CopyFiles */,
+				46FC34721C104AA900CCF72E /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -329,10 +348,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E678021C1E91EE007A2C85 /* AutoLockScreen.storyboard in Resources */,
 				46FC34381C101E6800CCF72E /* LaunchScreen.storyboard in Resources */,
 				467EFFDC1C137FA500937FE8 /* DataView.storyboard in Resources */,
-				467EFFD71C137F4900937FE8 /* Spreadsheet.storyboard in Resources */,
-				467EFFE41C147BDA00937FE8 /* Processing.storyboard in Resources */,
+				46E677F31C1E8F78007A2C85 /* Spreadsheet.storyboard in Resources */,
+				46E677F91C1E8FDB007A2C85 /* Processing.storyboard in Resources */,
 				46FC34351C101E6800CCF72E /* Assets.xcassets in Resources */,
 				46FC34331C101E6800CCF72E /* Main.storyboard in Resources */,
 			);
@@ -361,13 +381,14 @@
 			files = (
 				46FC34301C101E6800CCF72E /* ScanViewController.swift in Sources */,
 				46FC34681C10233C00CCF72E /* SampleListViewController.swift in Sources */,
+				46E677FB1C1E8FDB007A2C85 /* TcpSocketManager.swift in Sources */,
 				46FC342E1C101E6800CCF72E /* AppDelegate.swift in Sources */,
+				46E677F41C1E8F78007A2C85 /* SpreadsheetViewController.swift in Sources */,
 				46FC346B1C102A6D00CCF72E /* MEMELibAccess.swift in Sources */,
-				467EFFE21C147B4D00937FE8 /* TcpSocketManager.swift in Sources */,
+				46E677FA1C1E8FDB007A2C85 /* ProcessingViewController.swift in Sources */,
 				467EFFDD1C137FA500937FE8 /* DataViewController.swift in Sources */,
-				467EFFD81C137F4900937FE8 /* SpreadsheetViewController.swift in Sources */,
+				46E678001C1E91AB007A2C85 /* AutoLockScreenViewController.swift in Sources */,
 				469A94131C148841003FB39A /* Consts.swift in Sources */,
-				467EFFE01C14766700937FE8 /* ProcessingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

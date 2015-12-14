@@ -13,4 +13,7 @@ struct Consts {
         static let hostIpKey = "tcpHostIp"
         static let hostPortKey = "tcpHostPort"
     }
+    struct AutoLockScreen {
+        static let hostUrlKey = "hostUrlWithPort"
+    }
 }

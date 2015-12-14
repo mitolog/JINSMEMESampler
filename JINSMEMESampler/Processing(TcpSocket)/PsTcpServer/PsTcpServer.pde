@@ -418,7 +418,7 @@ void plotGyroGraphs(Rect rect) {
   textAlign(CENTER);
   textSize(8);
   stroke(0);
-  text("179", graphOriginX - 10, graphOriginY);
+  text("180", graphOriginX - 10, graphOriginY);
   
   textAlign(CENTER);
   textSize(8);

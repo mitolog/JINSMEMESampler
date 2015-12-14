@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="anW-wu-m6n">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Auto Lock Screen View Controller-->
+        <scene sceneID="Abd-Ar-a3F">
+            <objects>
+                <viewController id="anW-wu-m6n" customClass="AutoLockScreenViewController" customModule="JINSMEMESampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GyZ-UM-7yN"/>
+                        <viewControllerLayoutGuide type="bottom" id="CYb-37-AyX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cTb-lR-Qs6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.0.0.0:8080" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Rl-Fy-hjG">
+                                <rect key="frame" x="180" y="73" width="240" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Pfi-ic-3ZH"/>
+                                    <constraint firstAttribute="height" constant="30" id="baT-EM-c3X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="socket.io Host Url" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXE-eQ-DwI">
+                                <rect key="frame" x="180" y="44" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0yM-43-s5j"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Hgv-rY-joo"/>
+                                    <constraint firstAttribute="height" constant="21" id="XYF-bA-x5B"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="lUj-zF-sVI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="lUj-zF-sVI"/>
+                                        <exclude reference="Hgv-rY-joo"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jVg-od-8AC">
+                                <rect key="frame" x="0.0" y="185" width="600" height="415"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AutoLockScreenCell" textLabel="Olx-Q6-7hZ" detailTextLabel="IJ3-gO-jbM" style="IBUITableViewCellStyleValue1" id="oXL-dJ-HOR">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oXL-dJ-HOR" id="gGq-Xo-OcZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Olx-Q6-7hZ">
+                                                    <rect key="frame" x="15" y="14" width="34" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IJ3-gO-jbM">
+                                                    <rect key="frame" x="540" y="14" width="45" height="16"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nml-HC-czr">
+                                <rect key="frame" x="180" y="117" width="240" height="48"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1EC-3D-PIj"/>
+                                    <constraint firstAttribute="height" constant="48" id="JsT-y9-edv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                <state key="normal" title="Start"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Rl-Fy-hjG" firstAttribute="centerX" secondItem="ZXE-eQ-DwI" secondAttribute="centerX" id="JgZ-he-fGc"/>
+                            <constraint firstItem="nml-HC-czr" firstAttribute="top" secondItem="2Rl-Fy-hjG" secondAttribute="bottom" constant="20" id="Tqc-cY-lxi"/>
+                            <constraint firstAttribute="trailing" secondItem="jVg-od-8AC" secondAttribute="trailing" id="YA1-yJ-4p7"/>
+                            <constraint firstItem="ZXE-eQ-DwI" firstAttribute="centerX" secondItem="cTb-lR-Qs6" secondAttribute="centerX" id="Z8M-8i-kTr"/>
+                            <constraint firstItem="jVg-od-8AC" firstAttribute="top" secondItem="nml-HC-czr" secondAttribute="bottom" constant="20" id="aqo-8W-Wxl"/>
+                            <constraint firstItem="nml-HC-czr" firstAttribute="top" secondItem="2Rl-Fy-hjG" secondAttribute="bottom" constant="14" id="bQa-VA-vwU"/>
+                            <constraint firstItem="ZXE-eQ-DwI" firstAttribute="centerX" secondItem="cTb-lR-Qs6" secondAttribute="centerX" id="btU-Bu-RcL"/>
+                            <constraint firstItem="ZXE-eQ-DwI" firstAttribute="top" secondItem="GyZ-UM-7yN" secondAttribute="bottom" constant="24" id="ctr-42-6eR"/>
+                            <constraint firstItem="CYb-37-AyX" firstAttribute="top" secondItem="jVg-od-8AC" secondAttribute="bottom" id="efc-Ie-Fa8"/>
+                            <constraint firstItem="jVg-od-8AC" firstAttribute="leading" secondItem="cTb-lR-Qs6" secondAttribute="leading" id="gEO-8Q-U4m"/>
+                            <constraint firstItem="2Rl-Fy-hjG" firstAttribute="top" secondItem="ZXE-eQ-DwI" secondAttribute="bottom" constant="8" id="hN7-qS-EfN"/>
+                            <constraint firstItem="nml-HC-czr" firstAttribute="centerX" secondItem="cTb-lR-Qs6" secondAttribute="centerX" id="i1t-b8-7Vq"/>
+                            <constraint firstItem="ZXE-eQ-DwI" firstAttribute="centerX" secondItem="cTb-lR-Qs6" secondAttribute="centerX" id="wH2-JB-NsJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Tqc-cY-lxi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="hostIpTextField" destination="2Rl-Fy-hjG" id="wJo-Up-ceX"/>
+                        <outlet property="hostUrlTextField" destination="2Rl-Fy-hjG" id="NUc-aP-btF"/>
+                        <outlet property="startStopBtn" destination="nml-HC-czr" id="uNk-Uc-5ia"/>
+                        <outlet property="tableView" destination="jVg-od-8AC" id="cxJ-sN-pgc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gC4-Sp-fke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="523"/>
+        </scene>
+    </scenes>
+</document>
