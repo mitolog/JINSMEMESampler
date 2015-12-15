@@ -1,0 +1,3 @@
+[submodule "JINSMEMESampler/AutoLockScreen(socketio)/MacApp"]
+	path = JINSMEMESampler/AutoLockScreen(socketio)/MacApp
+	url = git@github.com:mitolog/AutoLockScreen.git
