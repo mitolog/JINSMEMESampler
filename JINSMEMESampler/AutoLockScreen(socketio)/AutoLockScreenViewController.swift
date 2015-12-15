@@ -42,7 +42,7 @@ class AutoLockScreenViewModel {
         }
         csvStr += "\n"
         
-        self.socket?.emit("publish", [csvStr])
+        self.socket?.emit("publish", csvStr)
     }
     
     func retrieveData() {
@@ -120,7 +120,9 @@ class AutoLockScreenViewModel {
                 return canSend
             })
             .subscribeNext { [unowned self] canSend in
-                self.sendData()
+                if self.socket != nil {
+                    self.sendData()
+                }
             }.addDisposableTo(self.disposeBag)
         
         /* Bind View -> Model */
@@ -157,42 +159,41 @@ class AutoLockScreenViewModel {
         
     }
     
+    func showAlertAndImmitateToggleButton(msg:String, content:String, viewController:AutoLockScreenViewController) {
+        dispatch_async(dispatch_get_main_queue(), {
+            
+            let alert = UIAlertController(title: msg, message: content, preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            viewController.presentViewController(alert, animated: true, completion: nil)
+        })
+        self.startStopBtnSequence.on(.Next(true))   // imitate button press
+    }
+    
     func setupAndStartSocketIO(hostUrl:String, _ presentingController:AutoLockScreenViewController) {
         
-        self.socket? = SocketIOClient(socketURL: hostUrl)
-        self.socket?.connect()
+        self.socket = SocketIOClient(socketURL: hostUrl)
         
         self.socket?.on("connect") { [unowned self] data, ack in
             self.sioStreamStatusSequence.on(.Next(true))
+            self.socket?.emit("connected", Consts.AutoLockScreen.appName)
         }
-        self.socket?.on("error", callback: { data, ack in
+        
+        self.socket?.on("error", callback: { [unowned self, unowned presentingController] data, ack in
             
-            dispatch_async(dispatch_get_main_queue(), { [unowned presentingController] in
-                let alert = UIAlertController(title: "SocketIO Error", message: "some error occured while connecting socket. Program automatically disconnect socket, please retry.", preferredStyle: .Alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                presentingController.presentViewController(alert, animated: true, completion: nil)
-            })
-            
-            self.startStopBtnSequence.on(.Next(true))   // imitate button press
-
-            
-        })
-        self.socket?.on("disconnect", callback: { data, ack in
-            dispatch_async(dispatch_get_main_queue(), { [unowned presentingController] in
-                let alert = UIAlertController(title: "SocketIO Disconnectd", message: "Another client disconnected.", preferredStyle: .Alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-                presentingController.presentViewController(alert, animated: true, completion: nil)
-            })
-            
-            self.startStopBtnSequence.on(.Next(true))   // imitate button press
-
+            self.showAlertAndImmitateToggleButton("SocketIO Error", content: "Program automatically disconnect socket, please retry. Error description: \(data.first!)", viewController: presentingController)
         })
         
+        self.socket?.on("disconnect", callback: { [unowned self, unowned presentingController] data, ack in
+            
+            self.showAlertAndImmitateToggleButton("SocketIO Disconnectd", content: "I'm disconnected from socket.io server.", viewController: presentingController)
+        })
         
+        self.socket?.connect()
     }
     
     func disconnect() {
         self.socket?.disconnect()
+        self.socket = nil
     }
 }
 

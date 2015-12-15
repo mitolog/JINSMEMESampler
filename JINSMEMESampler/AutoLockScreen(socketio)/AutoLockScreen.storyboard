@@ -39,8 +39,8 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="lUj-zF-sVI"/>
                                         <exclude reference="Hgv-rY-joo"/>
+                                        <exclude reference="lUj-zF-sVI"/>
                                     </mask>
                                 </variation>
                             </label>
@@ -108,7 +108,6 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="hostIpTextField" destination="2Rl-Fy-hjG" id="wJo-Up-ceX"/>
                         <outlet property="hostUrlTextField" destination="2Rl-Fy-hjG" id="NUc-aP-btF"/>
                         <outlet property="startStopBtn" destination="nml-HC-czr" id="uNk-Uc-5ia"/>
                         <outlet property="tableView" destination="jVg-od-8AC" id="cxJ-sN-pgc"/>

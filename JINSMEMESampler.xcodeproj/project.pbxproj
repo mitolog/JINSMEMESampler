@@ -17,6 +17,8 @@
 		46E677FB1C1E8FDB007A2C85 /* TcpSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E677F81C1E8FDB007A2C85 /* TcpSocketManager.swift */; };
 		46E678001C1E91AB007A2C85 /* AutoLockScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E677FF1C1E91AB007A2C85 /* AutoLockScreenViewController.swift */; };
 		46E678021C1E91EE007A2C85 /* AutoLockScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E678011C1E91EE007A2C85 /* AutoLockScreen.storyboard */; };
+		46E678801C1F2FC8007A2C85 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E6787F1C1F2FC8007A2C85 /* SocketIO.framework */; };
+		46E678811C1F2FD7007A2C85 /* SocketIO.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 46E6787F1C1F2FC8007A2C85 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		46FC342E1C101E6800CCF72E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC342D1C101E6800CCF72E /* AppDelegate.swift */; };
 		46FC34301C101E6800CCF72E /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC342F1C101E6800CCF72E /* ScanViewController.swift */; };
 		46FC34331C101E6800CCF72E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FC34311C101E6800CCF72E /* Main.storyboard */; };
@@ -60,6 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				46E678811C1F2FD7007A2C85 /* SocketIO.framework in Copy Files */,
 				46FC34731C104AB200CCF72E /* RxBlocking.framework in Copy Files */,
 				46FC34741C104AB200CCF72E /* RxCocoa.framework in Copy Files */,
 				46FC34751C104AB200CCF72E /* RxSwift.framework in Copy Files */,
@@ -83,6 +86,7 @@
 		46E677F81C1E8FDB007A2C85 /* TcpSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TcpSocketManager.swift; path = "Processing(TcpSocket)/TcpSocketManager.swift"; sourceTree = "<group>"; };
 		46E677FF1C1E91AB007A2C85 /* AutoLockScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoLockScreenViewController.swift; path = "JINSMEMESampler/AutoLockScreen(socketio)/AutoLockScreenViewController.swift"; sourceTree = SOURCE_ROOT; };
 		46E678011C1E91EE007A2C85 /* AutoLockScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = AutoLockScreen.storyboard; path = "JINSMEMESampler/AutoLockScreen(socketio)/AutoLockScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		46E6787F1C1F2FC8007A2C85 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
 		46FC342A1C101E6800CCF72E /* JINSMEMESampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JINSMEMESampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FC342D1C101E6800CCF72E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46FC342F1C101E6800CCF72E /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E678801C1F2FC8007A2C85 /* SocketIO.framework in Frameworks */,
 				46FC346F1C104A9700CCF72E /* RxBlocking.framework in Frameworks */,
 				46FC34701C104A9700CCF72E /* RxCocoa.framework in Frameworks */,
 				46FC34711C104A9700CCF72E /* RxSwift.framework in Frameworks */,
@@ -173,16 +178,25 @@
 			path = "Autolockscreen(socketio)";
 			sourceTree = "<group>";
 		};
+		46E678821C1F2FE3007A2C85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46E6787F1C1F2FC8007A2C85 /* SocketIO.framework */,
+				46FC346C1C104A9700CCF72E /* RxBlocking.framework */,
+				46FC346D1C104A9700CCF72E /* RxCocoa.framework */,
+				46FC346E1C104A9700CCF72E /* RxSwift.framework */,
+				46FC345B1C101FDE00CCF72E /* MEMELib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		46FC34211C101E6800CCF72E = {
 			isa = PBXGroup;
 			children = (
 				469A94151C16EEC7003FB39A /* Cartfile */,
 				46E677EE1C1E8B0C007A2C85 /* README.md */,
-				46FC346C1C104A9700CCF72E /* RxBlocking.framework */,
-				46FC346D1C104A9700CCF72E /* RxCocoa.framework */,
-				46FC346E1C104A9700CCF72E /* RxSwift.framework */,
-				46FC345B1C101FDE00CCF72E /* MEMELib.framework */,
 				46FC34611C10206000CCF72E /* JINSMEMESampler-Bridging-Header.h */,
+				46E678821C1F2FE3007A2C85 /* Frameworks */,
 				46FC342C1C101E6800CCF72E /* JINSMEMESampler */,
 				46FC34411C101E6800CCF72E /* JINSMEMESamplerTests */,
 				46FC344C1C101E6800CCF72E /* JINSMEMESamplerUITests */,

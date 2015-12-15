@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "68583CE61D18F3A9DD5F8EB5DAA3112290EDD9CF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "68583CE61D18F3A9DD5F8EB5DAA3112290EDD9CF" : 0,
+    "E703BD558A2AE9F75659A78F777A7668927BDC55" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "070203A6-8A03-46DF-8178-016B257BAB6A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "68583CE61D18F3A9DD5F8EB5DAA3112290EDD9CF" : "JINSMEMESampler\/",
+    "E703BD558A2AE9F75659A78F777A7668927BDC55" : "SIOSocketSwift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JINSMEMESampler",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JINSMEMESampler.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mitolog\/JINSMEMESampler.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "68583CE61D18F3A9DD5F8EB5DAA3112290EDD9CF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mitolog\/SIOSocketSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E703BD558A2AE9F75659A78F777A7668927BDC55"
+    }
+  ]
+}

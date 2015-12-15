@@ -15,5 +15,6 @@ struct Consts {
     }
     struct AutoLockScreen {
         static let hostUrlKey = "hostUrlWithPort"
+        static let appName = "iosApp"
     }
 }
